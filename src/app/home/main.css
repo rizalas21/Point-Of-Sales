@@ -1,0 +1,30 @@
+:root {
+  --primary: #3a60cf;
+  --secondary: #e4e6ef;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  height: 100%;
+}
+
+.container-content {
+  height: 100vh;
+  width: 80%;
+}
+
+.container-searchbar {
+  height: 10%;
+}
+
+.container-children {
+  padding: 20px;
+  background-color: #f1f1f1;
+  height: 90%;
+}

@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Montserrat", "Open Sans", sans-serif;
+}
+
+.container-searchbar {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+}
+
+.search {
+  width: 35%;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 110%;
+}
+
+input {
+  background-color: inherit;
+  height: 100%;
+  width: 90%;
+  border-radius: 5px;
+  border: none;
+  background-color: inherit;
+  padding: 5px 5px 5px 10px;
+  outline: none;
+}
+
+.button-search {
+  height: 100%;
+  width: 10%;
+  border: none;
+  background-color: #3a60cf;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.info {
+  width: 18vw;
+  height: 130%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profiles {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.separator {
+  color: #cccc;
+  height: 135%;
+  margin: 10px 0;
+  font-size: 40px;
+}
+
+.profiles img {
+  object-fit: cover;
+  border-radius: 50%;
+  max-width: 40px;
+  max-height: 40px;
+  margin-left: 15px;
+  position: relative;
+}
+
+.profiles p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #979797;
+  position: relative;
+}
+
+.container-notif {
+  display: flex;
+  align-items: flex-start;
+  width: auto;
+  cursor: pointer;
+}
+
+.count {
+  position: absolute;
+  margin-left: 12px;
+  background-color: #e74a3a;
+  color: white;
+  font-size: 11px;
+  padding: 2px 4px;
+  border-radius: 5px;
+}
+
+.hide-menu {
+  visibility: hidden;
+  background-color: white;
+  position: absolute;
+  margin: 35vh 1vw 0 0;
+  height: 24vh;
+  width: 13vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-radius: 5px;
+  cursor: default;
+  display: none;
+  transition: 0.5s;
+  overflow: auto;
+}
+
+.active {
+  visibility: visible;
+  display: flex;
+}
+
+.menu-settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 75%;
+  width: 100%;
+  padding: 0 0 8px;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.same {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  font-size: 18px;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 20px;
+}
+
+.same:hover {
+  background-color: #f7f7f7;
+}
+
+.same span {
+  margin-left: 13%;
+  color: rgb(49, 49, 49);
+  font-weight: 500;
+}
+
+.settings span {
+  margin-left: 10% !important;
+}
+
+.logout {
+  display: flex;
+  width: 100%;
+  font-size: 18px;
+  align-items: center;
+  padding: 5px 20px 5px;
+}
+
+.logout:hover {
+  background-color: #f7f7f7;
+}
+
+.logout span {
+  margin-left: 13%;
+  /* margin-top: 10px; */
+}
+
+/* MODAL CSS START */
+
+.modal {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 3% auto;
+  padding: 1%;
+  border: 1px solid #888;
+  width: 40%;
+  height: 30%;
+  color: #8f8e8e;
+}
+
+.header-modal {
+  height: 32%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal h3 {
+  align-content: center;
+  font-weight: 100;
+  height: 32%;
+  border-top: 1px solid #cccc;
+  border-bottom: 1px solid #cccc;
+}
+
+.btn-logout {
+  height: 32%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.buttons {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 60%;
+}
+
+.btn {
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  height: 50%;
+  width: 35% !important;
+  text-align: center;
+  margin: 0 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.btn.cancel {
+  background-color: #6c757d;
+  transition: 0.3s ease;
+}
+
+.btn.cancel:hover {
+  background-color: #454546;
+}
+
+.btn.logout {
+  background-color: #3a60cf;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn.logout:hover {
+  background-color: #3655b4;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+
+/* MODAL CSS END */

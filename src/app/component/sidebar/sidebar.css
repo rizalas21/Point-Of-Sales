@@ -1,0 +1,119 @@
+:root {
+  --primary: #3a60cf;
+  --secondary: #e4e6ef;
+}
+
+.container-sidebar {
+  background-color: var(--primary);
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-header {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 10%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+.h1-dash {
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section-dashboard {
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 9%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container-dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.section-master {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 20px;
+  padding: 0 0 20px;
+}
+
+.content {
+  display: flex;
+  align-items: flex-end;
+  margin: 10px 0 10px;
+  opacity: 0.5;
+  text-decoration: none;
+  color: inherit;
+  width: auto;
+}
+
+.href-none {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ml-4 {
+  margin-left: 20px;
+  font-weight: 200;
+  width: auto;
+}
+
+.font-icon {
+  font-size: 20px;
+}
+.h4-header {
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+
+.chevrons {
+  border: none !important;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.good-utilities {
+  width: auto;
+}
+
+.users,
+.sales {
+  width: 42% !important;
+}
+
+.suppliers,
+.purchases,
+.customers {
+  width: 50%;
+}
+
+.font-wrapper {
+  background-color: #f7f7f7;
+  width: 20%;
+  border-radius: 50%;
+  opacity: 0.55;
+}
